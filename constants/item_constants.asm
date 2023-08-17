@@ -157,11 +157,11 @@ MACRO add_tm
 ENDM
 
 DEF TM01 EQU const_value
-	add_tm MEGA_PUNCH   ; $C9
+	add_tm MEGATONPUNCH   ; $C9
 	add_tm RAZOR_WIND   ; $CA
 	add_tm SWORDS_DANCE ; $CB
 	add_tm WHIRLWIND    ; $CC
-	add_tm MEGA_KICK    ; $CD
+	add_tm MEGATONKICK    ; $CD
 	add_tm TOXIC        ; $CE
 	add_tm HORN_DRILL   ; $CF
 	add_tm BODY_SLAM    ; $D0
@@ -199,10 +199,10 @@ DEF TM01 EQU const_value
 	add_tm SKULL_BASH   ; $F0
 	add_tm SOFTBOILED   ; $F1
 	add_tm DREAM_EATER  ; $F2
-	add_tm SKY_ATTACK   ; $F3
+	add_tm GODBIRD   ; $F3
 	add_tm REST         ; $F4
 	add_tm THUNDER_WAVE ; $F5
-	add_tm PSYWAVE      ; $F6
+	add_tm MIND_SHOCK      ; $F6
 	add_tm EXPLOSION    ; $F7
 	add_tm ROCK_SLIDE   ; $F8
 	add_tm TRI_ATTACK   ; $F9

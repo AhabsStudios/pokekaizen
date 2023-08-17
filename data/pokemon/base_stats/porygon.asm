@@ -1,9 +1,9 @@
 	db DEX_PORYGON ; pokedex id
 
-	db  65,  60,  70,  40,  75
+	db  75,  70,  90,  60,  105
 	;   hp  atk  def  spd  spc
 
-	db NORMAL, NORMAL ; type
+	db ELECTRIC, ELECTRIC ; type
 	db 45 ; catch rate
 	db 130 ; base exp
 
@@ -17,7 +17,7 @@
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  ICE_BEAM,     BLIZZARD,     \
 	     HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      PSYCHIC_M,    \
 	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, PSYWAVE,      \
+	     SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, MIND_SHOCK,      \
 	     TRI_ATTACK,   SUBSTITUTE,   FLASH
 	; end
 

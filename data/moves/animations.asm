@@ -252,7 +252,7 @@ CometPunchAnim:
 	db -1 ; end
 
 MegaPunchAnim:
-	battle_anim MEGA_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim MEGATONPUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
 PayDayAnim:
@@ -347,7 +347,7 @@ DoubleKickAnim:
 	db -1 ; end
 
 MegaKickAnim:
-	battle_anim MEGA_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim MEGATONKICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
 JumpKickAnim:
@@ -556,7 +556,7 @@ HyperBeamAnim:
 	battle_anim HYPER_BEAM, SUBANIM_0_BEAM, 0, 2
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim MEGA_PUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim MEGATONPUNCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
@@ -1027,7 +1027,7 @@ LovelyKissAnim:
 	db -1 ; end
 
 SkyAttackAnim:
-	battle_anim SKY_ATTACK, SE_SQUISH_MON_PIC
+	battle_anim GODBIRD, SE_SQUISH_MON_PIC
 	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
 	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC

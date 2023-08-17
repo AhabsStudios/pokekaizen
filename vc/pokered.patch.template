@@ -194,7 +194,7 @@ MotionBlur1 = 21
 ConditionType = 11             
 ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+4 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}  
 ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }  
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             "D"             MEGA_PUNCH    00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }  
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGATONPUNCH    00  "S"           "E"             "L"             "F"             "D"             MEGATONPUNCH    00  "E"           "X"             "P"             "L"             MEGATONPUNCH  }  
 
 
 [FPA 001 End@Stop_reducing_move_anim_flashing_Mega_Punch]                                               
@@ -204,7 +204,7 @@ Address = {HEX @}
 ConditionType = 0                                           
 ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID} 
 ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==          } 
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGA_PUNCH  } 
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "P"             MEGATONPUNCH  } 
                                     
                                     
 ;rsm032916    
@@ -245,7 +245,7 @@ MotionBlur1 = 21
 ConditionType = 0             
 ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}  
 ConditionValueB = {dws_ ==            ==              ==              ==              ==              ==          }  
-ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "K"             MEGA_KICK   } 
+ConditionValueC = {dws_ "M"           "E"             "G"             "A"             "K"             MEGATONKICK   } 
 
 
 ;rsm001929 
@@ -268,7 +268,7 @@ Address = {hex @}
 ConditionType = 11                     
 ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID}  
 ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==          } 
-ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM    00  "M"           "E"             "G"             "A"             "K"             MEGA_KICK   } 
+ConditionValueC = {dws_ "B"           "U"             "B"             "B"             BUBBLEBEAM    00  "M"           "E"             "G"             "A"             "K"             MEGATONKICK   } 
  
 
 ;rsm103658 
@@ -403,7 +403,7 @@ Address = {HEX @}
 ConditionType = 11                     
 ConditionValueA = {dws_ wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+4 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+4 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wStringBuffer+5 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID  00  wStringBuffer wStringBuffer+1 wStringBuffer+2 wStringBuffer+3 wAnimationID}  
 ConditionValueB = {dws_ ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==              ==            ||  ==            ==              ==              ==              ==            ||  ==            ==              ==              ==              ==          }
-ConditionValueC = {dws_ "D"           "R"             "E"             "A"             DREAM_EATER   00  "R"           "O"             "C"             "K"             ROCK_SLIDE    00  "S"           "P"             "O"             "R"             SPORE         00  "S"           "E"             "L"             "F"             "D"             MEGA_PUNCH    00  "S"           "E"             "L"             "F"             "D"             SELFDESTRUCT  00  "C"           "O"             "N"             "F"             "S"             CONFUSION     00  "E"           "X"             "P"             "L"             EXPLOSION     00  "E"           "X"             "P"             "L"             MEGA_PUNCH  }
+ConditionValueC = {dws_ "D"           "R"             "E"             "A"             DREAM_EATER   00  "R"           "O"             "C"             "K"             ROCK_SLIDE    00  "S"           "P"             "O"             "R"             SPORE         00  "S"           "E"             "L"             "F"             "D"             MEGATONPUNCH    00  "S"           "E"             "L"             "F"             "D"             SELFDESTRUCT  00  "C"           "O"             "N"             "F"             "S"             CONFUSION     00  "E"           "X"             "P"             "L"             EXPLOSION     00  "E"           "X"             "P"             "L"             MEGATONPUNCH  }
 
 
 ;explosion  

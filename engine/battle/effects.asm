@@ -39,6 +39,8 @@ SleepEffect:
 	ld [bc], a
 	jr nz, .setSleepCounter ; if the target had to recharge, all hit tests will be skipped
 	                        ; including the event where the target already has another status
+	cp $7
+    jr z, .setSleepCounter
 	ld a, [de]
 	ld b, a
 	and $7
@@ -480,7 +482,16 @@ UpdateStatDone:
 	call nz, Bankswitch
 	pop de
 .notMinimize
+     ldh a, [hWhoseTurn]
+     and a
+     ld a, [wPlayerMovePower]
+     jr z, .gotUsersPower1
+     ld a, [wEnemyMovePower]
+.gotUsersPower1
+       and a ; Skip animation if damage dealing move
+       jr nz, .skipAnimation
 	call PlayCurrentMoveAnimation
+.skipAnimation
 	ld a, [de]
 	cp MINIMIZE
 	jr nz, .applyBadgeBoostsAndStatusPenalties
@@ -544,12 +555,6 @@ StatModifierDownEffect:
 	ld hl, wPlayerMonStatMods
 	ld de, wEnemyMoveEffect
 	ld bc, wPlayerBattleStatus1
-	ld a, [wLinkState]
-	cp LINK_STATE_BATTLING
-	jr z, .statModifierDownEffect
-	call BattleRandom
-	cp 25 percent + 1 ; chance to miss by in regular battle
-	jp c, MoveMissed
 .statModifierDownEffect
 	call CheckTargetSubstitute ; can't hit through substitute
 	jp nz, MoveMissed
@@ -680,6 +685,14 @@ UpdateLoweredStatDone:
 	ld a, [de]
 	cp $44
 	jr nc, .ApplyBadgeBoostsAndStatusPenalties
+	ldh a, [hWhoseTurn] ; check who is using the move
+    and a
+	ld a, [wPlayerMovePower]
+    jr z, .gotUsersPower2
+    ld a, [wEnemyMovePower]
+.gotUsersPower2
+	and a ; Skip animation if damage dealing move
+	jr nz, .ApplyBadgeBoostsAndStatusPenalties
 	call PlayCurrentMoveAnimation2
 .ApplyBadgeBoostsAndStatusPenalties
 	ldh a, [hWhoseTurn]
@@ -1040,7 +1053,7 @@ ChargeMoveEffectText:
 	cp SKULL_BASH
 	ld hl, LoweredItsHeadText
 	jr z, .gotText
-	cp SKY_ATTACK
+	cp GODBIRD
 	ld hl, SkyAttackGlowingText
 	jr z, .gotText
 	cp FLY

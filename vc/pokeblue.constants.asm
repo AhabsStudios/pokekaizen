@@ -15,7 +15,7 @@ ENDM
 	vc_const "L"
 	vc_const "F"
 	vc_const "X"
-	vc_const MEGA_PUNCH
+	vc_const MEGATONPUNCH
 
 ; [FPA 001 End]
 	vc_const EXPLOSION
@@ -27,7 +27,7 @@ ENDM
 
 ; [FPA 002 End]
 	vc_const "K"
-	vc_const MEGA_KICK
+	vc_const MEGATONKICK
 
 ; [FPA 004 Begin]
 	vc_const "B"

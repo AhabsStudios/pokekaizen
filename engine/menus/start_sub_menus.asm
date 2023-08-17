@@ -319,6 +319,7 @@ StartMenu_Item::
 	ld a, [wBagSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	call DisplayListMenuID
+	jp nz, .sortItems
 	ld a, [wCurrentMenuItem]
 	ld [wBagSavedMenuItem], a
 	jr nc, .choseItem
@@ -432,6 +433,9 @@ StartMenu_Item::
 	call DisplayChooseQuantityMenu
 	inc a
 	jr z, .tossZeroItems
+.sortItems
+	callfar SortItems
+	jp ItemMenuLoop
 .skipAskingQuantity
 	ld hl, wNumBagItems
 	call TossItem

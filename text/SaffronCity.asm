@@ -124,7 +124,7 @@ _SaffronCityTrainerTips1Text::
 _SaffronCityTrainerTips2Text::
 	text "TRAINER TIPS"
 
-	para "New GREAT BALL"
+	para "New SUPER BALL"
 	line "offers improved"
 	cont "capture rates."
 
