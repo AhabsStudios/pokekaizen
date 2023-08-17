@@ -142,6 +142,10 @@ LoadSAVIgnoreBadCheckSum:
 
 SaveSAV:
 	farcall PrintSaveScreenText
+	ld hl, WouldYouLikeToSaveText
+	call SaveSAVConfirm
+	and a   ;|0 = Yes|1 = No|
+	ret nz
 	ld a, [wSaveFileStatus]
 	dec a
 	jr z, .save
@@ -174,6 +178,10 @@ SaveSAVConfirm:
 	call DisplayTextBoxID ; yes/no menu
 	ld a, [wCurrentMenuItem]
 	ret
+
+WouldYouLikeToSaveText:
+	text_far _WouldYouLikeToSaveText
+	text_end
 
 GameSavedText:
 	text_far _GameSavedText
