@@ -4690,6 +4690,10 @@ CriticalHitTest:
 	jr .noFocusEnergyUsed
 .focusEnergyUsed
 	sla b
+	ld b, $ff                    ; cap at 255/256
+	sla b
+	ld b, $ff                    ; cap at 255/256
+	sla b
 .noFocusEnergyUsed
 	ld hl, HighCriticalMoves     ; table of high critical hit moves
 .Loop
@@ -4702,6 +4706,9 @@ CriticalHitTest:
 	jr .SkipHighCritical         ; continue as a normal move
 .HighCritical
 	sla b                        ; *2 for high critical hit moves
+	ld b, $ff                    ; cap at 255/256
+	sla b
+	ld b, $ff                    ; cap at 255/256
 .SkipHighCritical
 	call BattleRandom            ; generates a random value, in "a"
 	rlc a
