@@ -21,4 +21,5 @@
 	     MIND_SHOCK,      TRI_ATTACK,   SUBSTITUTE,   SURF,         FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(StaryuPicFront)
+	assert BANK(StaryuPicFront) == BANK(StaryuPicBack)

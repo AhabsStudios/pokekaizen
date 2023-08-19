@@ -19,4 +19,5 @@
 	     DREAM_EATER,  REST,         MIND_SHOCK,      EXPLOSION,    SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(HaunterPicFront)
+	assert BANK(HaunterPicFront) == BANK(HaunterPicBack)

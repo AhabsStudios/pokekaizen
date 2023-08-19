@@ -30,7 +30,7 @@ SpecialTrainerMoves:
 	db 1, 2, THUNDER_WAVE
 	db 1, 3, SUPERSONIC
 	db 1, 4, SCREECH
-	db 2, 1, QUICK_ATTACK
+	db 2, 1, WATER_GUN
 	db 2, 2, SUPER_FANG
 	db 2, 3, THUNDERBOLT
 	db 2, 4, BITE
@@ -149,7 +149,8 @@ SpecialTrainerMoves:
 	db 6, 2, BODY_SLAM
 	db 6, 3, SKULL_BASH
 	db 6, 4, HYPER_BEAM
-
+	db 0
+	
 	db LORELEI, 1
 	db 1, 1, AURORA_BEAM
 	db 1, 2, REST

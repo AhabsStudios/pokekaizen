@@ -21,4 +21,5 @@
 	     MIND_SHOCK,      SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(MagmarPicFront)
+	assert BANK(MagmarPicFront) == BANK(MagmarPicBack)

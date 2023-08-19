@@ -19,4 +19,5 @@
 	     BIDE,         REST,         MIND_SHOCK,      SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(VenonatPicFront)
+	assert BANK(VenonatPicFront) == BANK(VenonatPicBack)

@@ -703,6 +703,7 @@ ArbokEvosMoves:
 	db 17, BITE
 	db 27, GLARE
 	db 36, SCREECH
+	db 40, SUPER_FANG
 	db 47, ACID
 	db 0
 
@@ -1329,6 +1330,7 @@ EkansEvosMoves:
 	db 10, POISON_STING
 	db 17, BITE
 	db 24, GLARE
+	db 28, SUPER_FANG
 	db 31, SCREECH
 	db 38, ACID
 	db 0
@@ -1370,6 +1372,7 @@ WeedleEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 7, KAKUNA
 	db 0
+	db 7, POISONPOWDER
 ; Learnset
 	db 0
 
@@ -1377,6 +1380,8 @@ KakunaEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 9, BEEDRILL
 	db 0
+	db 7, HARDEN
+	db 8, POISONPOWDER
 ; Learnset
 	db 0
 
@@ -1471,6 +1476,7 @@ CaterpieEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 7, METAPOD
 	db 0
+	db 8, SLEEP_POWDER
 ; Learnset
 	db 0
 
@@ -1478,6 +1484,8 @@ MetapodEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 9, BUTTERFREE
 	db 0
+	db 7, HARDEN
+	db 8, SLEEP_POWDER
 ; Learnset
 	db 0
 

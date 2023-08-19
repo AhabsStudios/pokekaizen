@@ -3,7 +3,7 @@ VictoryRoad1FWildMons:
 	db 24, MACHOP
 	db 26, GEODUDE
 	db 22, ZUBAT
-	db 36, ONIX
+	db 36, MAGMAR
 	db 39, ONIX
 	db 42, ONIX
 	db 41, GRAVELER

@@ -21,4 +21,5 @@
 		 SOLARBEAM, 
 	; end
 
-	db 0 ; padding
+	db BANK(NinetalesPicFront)
+	assert BANK(NinetalesPicFront) == BANK(NinetalesPicBack)

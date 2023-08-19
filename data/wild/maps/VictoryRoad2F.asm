@@ -6,8 +6,8 @@ VictoryRoad2FWildMons:
 	db 36, ONIX
 	db 39, ONIX
 	db 42, ONIX
-	db 41, MACHOKE
-	db 40, GOLBAT
+	db 41, HITMONCHAN
+	db 41, HITMONLEE
 	db 40, MAROWAK
 	db 43, GRAVELER
 	end_grass_wildmons

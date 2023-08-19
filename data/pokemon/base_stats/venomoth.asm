@@ -20,4 +20,5 @@
 	     SWIFT,        REST,         MIND_SHOCK,      SUBSTITUTE
 	; end
 
-	db 0 ; padding
+	db BANK(VenomothPicFront)
+	assert BANK(VenomothPicFront) == BANK(VenomothPicBack)

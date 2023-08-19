@@ -43,14 +43,11 @@ _Route12SuperRodHouseFishingGuruTryFishingText::
 	text "Hello there,"
 	line "<PLAYER>!"
 
-	para "Use the SUPER ROD"
+	para "Use the OLD ROD"
 	line "in any water!"
 	cont "You can catch"
-	cont "different kinds"
-	cont "of #MON."
-
-	para "Try fishing"
-	line "wherever you can!"
+	cont "only MAGIKARP"
+	cont "with it!"
 	done
 
 _Route12SuperRodHouseFishingGuruNoRoomText::

@@ -21,7 +21,7 @@ _GameCornerClerk1DoYouNeedSomeGameCoinsText::
 
 _GameCornerClerk1ThanksHereAre50CoinsText::
 	text "Thanks! Here are"
-	line "your 50 coins!"
+	line "your 500 coins!"
 	done
 
 _GameCornerClerk1PleaseComePlaySometimeText::

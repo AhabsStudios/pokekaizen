@@ -1,6 +1,6 @@
 	db DEX_ONIX ; pokedex id
 
-	db  35,  35, 160,  70,  160
+	db  35,  35, 160,  70,  130
 	;   hp  atk  def  spd  spc
 
 	db ROCK, GROUND ; type
@@ -20,4 +20,5 @@
 	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
-	db 0 ; padding
+	db BANK(OnixPicFront)
+	assert BANK(OnixPicFront) == BANK(OnixPicBack)

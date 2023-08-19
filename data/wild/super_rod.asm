@@ -89,8 +89,8 @@ SuperRodData:
 .Group9:
 	db 4
 	db 23, SLOWBRO
-	db 23, SEAKING
-	db 23, KINGLER
+	db 23, KABUTO
+	db 23, OMANYTE
 	db 23, SEADRA
 
 .Group10:

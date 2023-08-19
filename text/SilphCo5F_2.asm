@@ -49,7 +49,10 @@ _SilphCo5FPokemonReport3Text::
 	text "It's a #MON"
 	line "REPORT!"
 
-	para "4 #MON evolve"
-	line "only when traded"
-	cont "by link-cable."
+	para "Recently, 4 new"
+	line "species have"
+	cont "been observed to"
+	cont "evolve when they"
+	cont "are exposed to a"
+	cont "MOON STONE."
 	done

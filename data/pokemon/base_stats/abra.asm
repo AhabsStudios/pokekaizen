@@ -21,4 +21,5 @@
 	     MIND_SHOCK,      TRI_ATTACK,   SUBSTITUTE,   FLASH
 	; end
 
-	db 0 ; padding
+	db BANK(AbraPicFront)
+	assert BANK(AbraPicFront) == BANK(AbraPicBack)

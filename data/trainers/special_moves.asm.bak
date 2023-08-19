@@ -30,7 +30,7 @@ SpecialTrainerMoves:
 	db 1, 2, THUNDER_WAVE
 	db 1, 3, SUPERSONIC
 	db 1, 4, SCREECH
-	db 2, 1, QUICK_ATTACK
+	db 2, 1, WATER_GUN
 	db 2, 2, SUPER_FANG
 	db 2, 3, THUNDERBOLT
 	db 2, 4, BITE
@@ -165,7 +165,7 @@ SpecialTrainerMoves:
  	db 3, 4, BARRIER
 	db 4, 1, AMNESIA
 	db 4, 2, WITHDRAW
-	db 4, 3, PSYCHIC
+	db 4, 3, PSYCHIC_M
 	db 4, 4, MEGATONPUNCH
 	db 5, 1, HYPNOSIS
 	db 5, 2, THUNDERBOLT

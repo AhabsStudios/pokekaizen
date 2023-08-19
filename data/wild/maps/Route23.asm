@@ -18,8 +18,8 @@ IF DEF(_BLUE)
 	db 41, SANDSLASH
 ENDC
 	db 43, DITTO
-	db 41, FEAROW
-	db 43, FEAROW
+	db 41, ARBOK
+	db 43, SANDSLASH
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
