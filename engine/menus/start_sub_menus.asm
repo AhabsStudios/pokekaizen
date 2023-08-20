@@ -433,6 +433,7 @@ StartMenu_Item::
 	call DisplayChooseQuantityMenu
 	inc a
 	jr z, .tossZeroItems
+	jp .skipAskingQuantity
 .sortItems
 	callfar SortItems
 	jp ItemMenuLoop
