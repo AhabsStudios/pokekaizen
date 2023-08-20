@@ -370,8 +370,8 @@ MainInBattleLoop:
 	call HandleMovePriority
 	; c = player priority, e = enemy priority
 	ld a, c
-	cp e	
-
+	cp e
+	jr z, .compareSpeed ; if both used Counter
 	jr c, .enemyMovesFirst
 	jr .playerMovesFirst
 .compareSpeed
