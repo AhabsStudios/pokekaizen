@@ -141,12 +141,13 @@ GameCornerClerk1Text:
 	text_asm
 	; Show player's coins
 	call GameCornerDrawCoinBox
-	ld hl, .DoYouNeedSomeGameCoins
+	ld hl, DoYouNeedSomeGameCoins
 	call PrintText
 	call YesNoChoice
 	ld a, [wCurrentMenuItem]
 	and a
 	jr nz, .declined
+.wantsToBuyMoreCoins
 	; Can only get more coins if you
 	; - have the Coin Case
 	ld b, COIN_CASE
@@ -159,18 +160,18 @@ GameCornerClerk1Text:
 	xor a
 	ldh [hMoney], a
 	ldh [hMoney + 2], a
-	ld a, $10
+	ld a, $a0
 	ldh [hMoney + 1], a
 	call HasEnoughMoney
 	jr nc, .buy_coins
-	ld hl, .CantAffordTheCoins
+	ld hl, CantAffordTheCoins
 	jr .print_ret
 .buy_coins
 	; Spend 1000 yen
 	xor a
 	ldh [hMoney], a
 	ldh [hMoney + 2], a
-	ld a, $10
+	ld a, $a0
 	ldh [hMoney + 1], a
 	ld hl, hMoney + 2
 	ld de, wPlayerMoney + 2
@@ -179,51 +180,71 @@ GameCornerClerk1Text:
 	; Receive 50 coins
 	xor a
 	ldh [hUnusedCoinsByte], a
-	ldh [hCoins], a
-	ld a, $50
 	ldh [hCoins + 1], a
-	ld de, wPlayerCoins + 1
-	ld hl, hCoins + 1
-	ld c, $2
+	ldh [hCoins + 2], a
+	ld a, $5
+	ldh [hCoins], a
+	ld de, wPlayerCoins + 2
+	ld hl, hCoins + 2
+	ld c, $3
 	predef AddBCDPredef
 	; Update display
 	call GameCornerDrawCoinBox
-	ld hl, .ThanksHereAre50Coins
+	ld hl, ThanksHereAre500Coins
+	ld a, SFX_PURCHASE
+	call PlaySoundWaitForCurrent
+	call PrintText
+	ld hl, CeladonGameCornerText_another500
+	call PrintText
+	call YesNoChoice
+	ld a, [wCurrentMenuItem]
+	and a
+	jr z, .wantsToBuyMoreCoins
+	ld hl, CeladonGameCornerThanks
 	jr .print_ret
 .declined
-	ld hl, .PleaseComePlaySometime
+	ld hl, PleaseComePlaySometime
 	jr .print_ret
 .coin_case_full
-	ld hl, .CoinCaseIsFull
+	ld hl, CoinCaseIsFull
 	jr .print_ret
 .no_coin_case
-	ld hl, .DontHaveCoinCase
+	ld hl, DontHaveCoinCase
 .print_ret
 	call PrintText
+.done
 	jp TextScriptEnd
 
-.DoYouNeedSomeGameCoins:
+DoYouNeedSomeGameCoins:
 	text_far _GameCornerClerk1DoYouNeedSomeGameCoinsText
 	text_end
 
-.ThanksHereAre50Coins:
-	text_far _GameCornerClerk1ThanksHereAre50CoinsText
+ThanksHereAre500Coins:
+	text_far _GameCornerClerk1ThanksHereAre500CoinsText
 	text_end
 
-.PleaseComePlaySometime:
+PleaseComePlaySometime:
 	text_far _GameCornerClerk1PleaseComePlaySometimeText
 	text_end
 
-.CantAffordTheCoins:
+CantAffordTheCoins:
 	text_far _GameCornerClerk1CantAffordTheCoinsText
 	text_end
 
-.CoinCaseIsFull:
+CoinCaseIsFull:
 	text_far _GameCornerClerk1CoinCaseIsFullText
 	text_end
 
-.DontHaveCoinCase:
+DontHaveCoinCase:
 	text_far _GameCornerClerk1DontHaveCoinCaseText
+	text_end
+
+CeladonGameCornerThanks:
+	text_far _Thanks2Text
+	text_end
+
+CeladonGameCornerText_another500:
+	text_far _CeladonGameCornerText_another500
 	text_end
 
 GameCornerMiddleAgedMan1Text:
