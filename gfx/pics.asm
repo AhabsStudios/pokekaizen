@@ -56,8 +56,6 @@ BlastoisePicFront::   INCBIN "gfx/pokemon/front/blastoise.pic"
 BlastoisePicBack::    INCBIN "gfx/pokemon/back/blastoiseb.pic"
 PinsirPicFront::      INCBIN "gfx/pokemon/front/pinsir.pic"
 PinsirPicBack::       INCBIN "gfx/pokemon/back/pinsirb.pic"
-TangelaPicFront::     INCBIN "gfx/pokemon/front/tangela.pic"
-TangelaPicBack::      INCBIN "gfx/pokemon/back/tangelab.pic"
 
 
 SECTION "Pics 2", ROMX
@@ -376,3 +374,5 @@ OnixPicFront::        INCBIN "gfx/pokemon/front/onix.pic"
 OnixPicBack::         INCBIN "gfx/pokemon/back/onixb.pic"
 PidgeotPicFront::      INCBIN "gfx/pokemon/front/pidgeot.pic"
 PidgeotPicBack::       INCBIN "gfx/pokemon/back/pidgeotb.pic"
+TangelaPicFront::     INCBIN "gfx/pokemon/front/tangela.pic"
+TangelaPicBack::      INCBIN "gfx/pokemon/back/tangelab.pic"
