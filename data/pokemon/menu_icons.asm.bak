@@ -97,8 +97,8 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Onix
 	nybble ICON_MON       ; Drowzee
 	nybble ICON_MON       ; Hypno
-	nybble ICON_HELIX     ; Krabby
-	nybble ICON_HELIX     ; Kingler
+	nybble ICON_WATER     ; Krabby
+	nybble ICON_WATER     ; Kingler
 	nybble ICON_BALL      ; Voltorb
 	nybble ICON_BALL      ; Electrode
 	nybble ICON_GRASS     ; Exeggcute
@@ -136,7 +136,7 @@ MonPartyData:
 	nybble ICON_QUADRUPED ; Vaporeon
 	nybble ICON_QUADRUPED ; Jolteon
 	nybble ICON_QUADRUPED ; Flareon
-	nybble ICON_BALL       ; Porygon
+	nybble ICON_MON       ; Porygon
 	nybble ICON_HELIX     ; Omanyte
 	nybble ICON_HELIX     ; Omastar
 	nybble ICON_HELIX     ; Kabuto

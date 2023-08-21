@@ -191,7 +191,7 @@ DisplayListMenuIDLoop::
 	rra ; Sets the zero flag to 0 so the sorting function will happen
 	rla
 	jp BankswitchBack
-
+	
 .upPressed
 	ld a, [hl]
 	and a
