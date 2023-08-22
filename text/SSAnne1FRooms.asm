@@ -1,3 +1,15 @@
+_SSAnne1FRoomsComfyBedText::
+	text "Oh, a comfy bed!"
+
+	para "Time for a small"
+	line "nap."
+	prompt
+
+_SSAnne1FRoomsTimeToGetGoingText::
+	text "Ok, time to get"
+	line "going!"
+	prompt
+
 _SSAnne1FRoomsWigglytuffText::
 	text "WIGGLYTUFF: Puup"
 	line "pupuu!@"
@@ -76,11 +88,9 @@ _SSAnne1FRoomsCooltrainerFAfterBattleText::
 	done
 
 _SSAnne1FRoomsGirl1Text::
-	text "I'm the ship's"
-	line "masseuse!"
-	para "You should take"
-	line "a short rest."
-	para "Here!"
+	text "Waiter, I would"
+	line "like a cherry pie"
+	cont "please!"
 	done
 
 _SSAnne1FRoomsGirl1HealedText::

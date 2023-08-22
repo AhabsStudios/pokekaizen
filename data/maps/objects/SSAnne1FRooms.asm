@@ -21,7 +21,7 @@ SSAnne1FRooms_Object:
 	warp_event  0, 10, SS_ANNE_1F, 6
 	warp_event 10, 10, SS_ANNE_1F, 7
 	warp_event 20, 10, SS_ANNE_1F, 8
-
+	warp_event 30,  0, SS_ANNE_1F, 9
 	def_bg_events
 
 	def_object_events

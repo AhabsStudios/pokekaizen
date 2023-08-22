@@ -26,19 +26,16 @@ Dojo_GFX::
 Gym_GFX::           INCBIN "gfx/tilesets/gym.2bpp"
 Dojo_Block::
 Gym_Block::         INCBIN "gfx/blocksets/gym.bst"
-
 Mart_GFX::
 Pokecenter_GFX::    INCBIN "gfx/tilesets/pokecenter.2bpp"
 Mart_Block::
 Pokecenter_Block::  INCBIN "gfx/blocksets/pokecenter.bst"
-
 ForestGate_GFX::
 Museum_GFX::
 Gate_GFX::          INCBIN "gfx/tilesets/gate.2bpp"
 ForestGate_Block::
 Museum_Block::
 Gate_Block::        INCBIN "gfx/blocksets/gate.bst"
-
 Forest_GFX::        INCBIN "gfx/tilesets/forest.2bpp"
 Forest_Block::      INCBIN "gfx/blocksets/forest.bst"
 Facility_GFX::      INCBIN "gfx/tilesets/facility.2bpp"
@@ -53,11 +50,14 @@ Cavern_GFX::        INCBIN "gfx/tilesets/cavern.2bpp"
 Cavern_Block::      INCBIN "gfx/blocksets/cavern.bst"
 Lobby_GFX::         INCBIN "gfx/tilesets/lobby.2bpp"
 Lobby_Block::       INCBIN "gfx/blocksets/lobby.bst"
-Ship_GFX::          INCBIN "gfx/tilesets/ship.2bpp"
-Ship_Block::        INCBIN "gfx/blocksets/ship.bst"
 Lab_GFX::           INCBIN "gfx/tilesets/lab.2bpp"
 Lab_Block::         INCBIN "gfx/blocksets/lab.bst"
 Club_GFX::          INCBIN "gfx/tilesets/club.2bpp"
 Club_Block::        INCBIN "gfx/blocksets/club.bst"
 Underground_GFX::   INCBIN "gfx/tilesets/underground.2bpp"
 Underground_Block:: INCBIN "gfx/blocksets/underground.bst"
+
+SECTION "Tilesets 4", ROMX
+
+Ship_GFX::          INCBIN "gfx/tilesets/ship.2bpp"
+Ship_Block::        INCBIN "gfx/blocksets/ship.bst"
