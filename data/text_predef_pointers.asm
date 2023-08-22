@@ -70,3 +70,5 @@ TextPredefs::
 	add_tx_pre BookOrSculptureText                  ; 40
 	add_tx_pre ElevatorText                         ; 41
 	add_tx_pre PokemonStuffText                     ; 42
+	add_tx_pre SSAnne1FRoomsComfyBedText            ; 43
+	add_tx_pre SSAnne1FRoomsTimeToGetGoingText      ; 44

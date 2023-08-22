@@ -3,7 +3,7 @@ _SSAnne1FRoomsComfyBedText::
 
 	para "Time for a small"
 	line "nap."
-	prompt
+	done
 
 _SSAnne1FRoomsTimeToGetGoingText::
 	text "Ok, time to get"

@@ -2,10 +2,10 @@ SSAnne1FRoomsBedHealScript::
 	ld a, [wSpritePlayerStateData1FacingDirection]
 	cp SPRITE_FACING_RIGHT
 	ret nz
+	call EnableAutoTextBoxDrawing
+	tx_pre SSAnne1FRoomsComfyBedText
 
 SSAnne1FRoomsHealScript:
-	ld hl, SSAnne1FRoomsComfyBedText
-	call PrintText
 	call GBFadeOutToWhite
 	call ReloadMapData
 	predef HealParty
@@ -20,12 +20,13 @@ SSAnne1FRoomsHealScript:
 	ld [wNewSoundID], a
 	call PlaySound
 	call GBFadeInFromWhite
-	ld hl, SSAnne1FRoomsTimeToGetGoingText
-	jp PrintText
+	tx_pre SSAnne1FRoomsTimeToGetGoingText
+	ret
 
-SSAnne1FRoomsComfyBedText:
+SSAnne1FRoomsComfyBedText::
 	text_far _SSAnne1FRoomsComfyBedText
 	text_end
-SSAnne1FRoomsTimeToGetGoingText:
+
+SSAnne1FRoomsTimeToGetGoingText::
 	text_far _SSAnne1FRoomsTimeToGetGoingText
 	text_end
