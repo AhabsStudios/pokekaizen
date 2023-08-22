@@ -195,6 +195,18 @@ EvosMovesPointerTable:
 	dw VictreebelEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
+ZubatEvosMoves:
+; Evolutions
+	db EV_LEVEL, 22, GOLBAT
+	db 0
+; Learnset
+	db 10, SUPERSONIC
+	db 15, BITE
+	db 18, CONFUSE_RAY
+	db 22, WING_ATTACK
+	db 36, HAZE
+	db 0
+
 RhydonEvosMoves:
 ; Evolutions
 	db 0
@@ -229,6 +241,18 @@ NidoranMEvosMoves:
 	db 29, FURY_ATTACK
 	db 36, HORN_DRILL
 	db 43, DOUBLE_KICK
+	db 0
+
+EkansEvosMoves:
+; Evolutions
+	db EV_LEVEL, 22, ARBOK
+	db 0
+; Learnset
+	db 10, POISON_STING
+	db 17, BITE
+	db 24, GLARE
+	db 31, SCREECH
+	db 38, ACID
 	db 0
 
 ClefairyEvosMoves:
@@ -1261,83 +1285,41 @@ FlareonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, EMBER
+	db 26, EMBER
 	db 27, QUICK_ATTACK
-	db 31, EMBER
-	db 37, TAIL_WHIP
-	db 40, BITE
-	db 42, LEER
+	db 33, RAGE
+	db 38, THRASH
 	db 44, FIRE_SPIN
-	db 48, RAGE
-	db 54, FLAMETHROWER
+	db 48, FLAMETHROWER
 	db 0
 
 JolteonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, THUNDERSHOCK
+	db 26, THUNDERSHOCK 
 	db 27, QUICK_ATTACK
-	db 31, THUNDERSHOCK
-	db 37, TAIL_WHIP
-	db 40, THUNDER_WAVE
-	db 42, DOUBLE_KICK
-	db 44, AGILITY
-	db 48, PIN_MISSILE
-	db 54, THUNDER
+	db 33, THUNDER_WAVE
+	db 38, DOUBLE_KICK
+	db 44, PIN_MISSILE
+	db 48, THUNDER
 	db 0
 
 VaporeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 25 WATER_GUN
-	db 26 WATER_GUN
+	db 25, WATER_GUN
+	db 26, WATER_GUN
 	db 27, QUICK_ATTACK
-	db 31, WATER_GUN
-	db 37, TAIL_WHIP
-	db 40, BITE
-	db 42, ACID_ARMOR
+	db 33, BITE
+	db 38, ACID_ARMOR
 	db 44, HAZE
-	db 48, MIST
-	db 54, HYDRO_PUMP
+	db 48, HYDRO_PUMP
 	db 0
-
-MachopEvosMoves:
-; Evolutions
-	db EV_LEVEL, 28, MACHOKE
-	db 0
-; Learnset
-	db 20, LOW_KICK
-	db 25, LEER
-	db 32, FOCUS_ENERGY
-	db 39, SEISMIC_TOSS
-	db 46, SUBMISSION
-	db 0
-
-ZubatEvosMoves:
-; Evolutions
-	db EV_LEVEL, 22, GOLBAT
-	db 0
-; Learnset
-	db 5, WING_ATTACK
-	db 10, SUPERSONIC
-	db 15, BITE
-	db 21, CONFUSE_RAY
-	db 36, HAZE
-	db 0
-
-EkansEvosMoves:
-; Evolutions
-	db EV_LEVEL, 22, ARBOK
-	db 0
-; Learnset
-	db 10, POISON_STING
-	db 17, BITE
-	db 24, GLARE
-	db 28, SUPER_FANG
-	db 31, SCREECH
-	db 38, ACID
-	db 0
-
+	
 ParasEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 24, PARASECT

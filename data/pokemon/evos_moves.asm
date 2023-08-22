@@ -195,6 +195,30 @@ EvosMovesPointerTable:
 	dw VictreebelEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
+MachopEvosMoves:
+; Evolutions
+	db EV_LEVEL, 28, MACHOKE
+	db 0
+; Learnset
+	db 20, LOW_KICK
+	db 25, LEER
+	db 32, FOCUS_ENERGY
+	db 39, SEISMIC_TOSS
+	db 46, SUBMISSION
+	db 0
+
+ZubatEvosMoves:
+; Evolutions
+	db EV_LEVEL, 22, GOLBAT
+	db 0
+; Learnset
+	db 10, SUPERSONIC
+	db 15, BITE
+	db 18, CONFUSE_RAY
+	db 22, WING_ATTACK
+	db 36, HAZE
+	db 0
+
 RhydonEvosMoves:
 ; Evolutions
 	db 0
@@ -229,6 +253,18 @@ NidoranMEvosMoves:
 	db 29, FURY_ATTACK
 	db 36, HORN_DRILL
 	db 43, DOUBLE_KICK
+	db 0
+
+EkansEvosMoves:
+; Evolutions
+	db EV_LEVEL, 22, ARBOK
+	db 0
+; Learnset
+	db 10, POISON_STING
+	db 17, BITE
+	db 24, GLARE
+	db 31, SCREECH
+	db 38, ACID
 	db 0
 
 ClefairyEvosMoves:
