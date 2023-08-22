@@ -5,7 +5,7 @@ PokemonMansion1FWildMons:
 	db 34, RATICATE
 	db 30, RATICATE
 	db 34, GROWLITHE
-	db 32, PONYTA
+	db 32, GRIMER
 	db 30, GRIMER
 	db 28, ZUBAT
 	db 37, WEEZING

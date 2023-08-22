@@ -437,10 +437,10 @@ GyaradosEvosMoves:
 	db 0
 ; Learnset
 	db 20, BITE
-	db 25, DRAGON_RAGE
-	db 32, LEER
-	db 41, HYDRO_PUMP
-	db 52, HYPER_BEAM
+	db 25, THRASH
+	db 41, DRAGON_RAGE
+	db 48, HYDRO_PUMP
+	db 55, HYPER_BEAM
 	db 0
 
 ShellderEvosMoves:
@@ -1289,6 +1289,8 @@ VaporeonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25 WATER_GUN
+	db 26 WATER_GUN
 	db 27, QUICK_ATTACK
 	db 31, WATER_GUN
 	db 37, TAIL_WHIP
@@ -1647,6 +1649,7 @@ ElectrodeEvosMoves:
 	db 29, LIGHT_SCREEN
 	db 40, SWIFT
 	db 50, EXPLOSION
+	db 55, THUNDER
 	db 0
 
 ClefableEvosMoves:

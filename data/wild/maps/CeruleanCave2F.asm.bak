@@ -1,7 +1,7 @@
 CeruleanCave2FWildMons:
 	def_grass_wildmons 15 ; encounter rate
-	db 51, ALAKAZAM
-	db 51, GENGAR
+	db 51, DODRIO
+	db 51, VENOMOTH
 	db 51, KADABRA
 	db 52, RHYDON
 	db 52, MAROWAK

@@ -1,6 +1,6 @@
 	db DEX_PORYGON ; pokedex id
 
-	db  75,  70,  90,  60,  105
+	db  75,  70,  80,  60,  90
 	;   hp  atk  def  spd  spc
 
 	db ELECTRIC, ELECTRIC ; type

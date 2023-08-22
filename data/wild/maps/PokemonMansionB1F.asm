@@ -8,8 +8,8 @@ PokemonMansionB1FWildMons:
 	db 40, WEEZING
 	db 34, DITTO
 	db 35, GRIMER
-	db 42, WEEZING
-	db 42, MUK
+	db 42, MAGMAR
+	db 42, MAGMAR
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
