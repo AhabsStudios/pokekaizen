@@ -261,6 +261,7 @@ VoltorbEvosMoves:
 	db EV_LEVEL, 30, ELECTRODE
 	db 0
 ; Learnset
+	db 13, THUNDERSHOCK
 	db 17, SONICBOOM
 	db 22, SELFDESTRUCT
 	db 29, LIGHT_SCREEN
@@ -1380,6 +1381,7 @@ KakunaEvosMoves:
 ; Evolutions
 	db EV_LEVEL, 9, BEEDRILL
 	db 0
+	db 7, HARDEN
 	db 8, POISONPOWDER
 ; Learnset
 	db 0
@@ -1639,6 +1641,7 @@ ElectrodeEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 13, THUNDERSHOCK
 	db 17, SONICBOOM
 	db 22, SELFDESTRUCT
 	db 29, LIGHT_SCREEN
