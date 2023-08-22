@@ -135,7 +135,7 @@ SSAnne1FRoomsGirl1Text:
 	ld [wNewSoundID], a
 	call PlaySound
 	call GBFadeInFromWhite
-	ld hl, _SSAnne1FRoomsGirl1HealedText
+	ld hl, SSAnne1FRoomsGirl1HealedText
 	jp PrintText
 
 SSAnne1FRoomsMiddleAgedManText:
