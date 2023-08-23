@@ -1,6 +1,6 @@
 	object_const_def
-	const TEXT_FUCHSIAMOVEDELETER
-	const TEXT_FUCHSIAMOVERELEARNER
+	const FUCHSIA_MOVE_HOUSE_DELETER
+	const FUCHSIA_MOVE_HOUSE_RELEARNER
 
 FuchsiaMoveHouse_Object:
 	db $a ; border block
@@ -12,8 +12,8 @@ FuchsiaMoveHouse_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  2, 3, SPRITE_GAMEBOY_KID, STAY, DOWN, TEXT_FUCHSIAMOVEDELETER
-	object_event  5, 3, SPRITE_GAMEBOY_KID, STAY, DOWN, TEXT_FUCHSIAMOVERELEARNER
+	object_event  2, 3, SPRITE_GAMEBOY_KID, STAY, DOWN, TEXT_FUCHSIA_MOVE_HOUSE_DELETER
+	object_event  5, 3, SPRITE_GAMEBOY_KID, STAY, DOWN, TEXT_FUCHSIA_MOVE_HOUSE_RELEARNER
 
 
 	def_warps_to FUCHSIA_MOVE_HOUSE

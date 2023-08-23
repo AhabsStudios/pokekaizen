@@ -1,9 +1,10 @@
 FuchsiaMoveHouse_Script:
-	ret
+	jp EnableAutoTextBoxDrawing
 
 FuchsiaMoveHouse_TextPointers:
-	dw MoveDeleterText1, TEXT_FUCHSIAMOVEDELETER
-	dw MoveRelearnerText1, TEXT_FUCHSIAMOVERELEARNER
+	def_text_pointers
+	dw_const MoveDeleterText1,     TEXT_FUCHSIA_MOVE_HOUSE_DELETER
+	dw_const MoveRelearnerText1,   TEXT_FUCHSIA_MOVE_HOUSE_RELEARNER
 
 MoveDeleterText1:
 	text_asm
@@ -156,35 +157,6 @@ PrepareDeletableMoveList:
 	ld [wMoveBuffer], a
 	ret
 
-MoveDeleterGreetingText:
-	text_far _MoveDeleterGreetingText
-	text_end
-
-MoveDeleterSaidYesText:
-	text_far _MoveDeleterSaidYesText
-	text_end
-
-MoveDeleterWhichMoveText:
-	text_far _MoveDeleterWhichMoveText
-	text_end
-
-MoveDeleterConfirmText:
-	text_far _MoveDeleterConfirmText
-	text_end
-
-MoveDeleterForgotText:
-	text_far _MoveDeleterForgotText
-	text_end
-
-MoveDeleterByeText:
-	text_far _MoveDeleterByeText
-	text_end
-
-MoveDeleterOneMoveText:
-	text_far _MoveDeleterOneMoveText
-	text_end
-
-
 MoveRelearnerText1:
 	text_asm
 ; Display the list of moves to the player.
@@ -292,6 +264,33 @@ MoveRelearnerText1:
 	call PrintText
 	jp TextScriptEnd
 
+MoveDeleterGreetingText:
+	text_far _MoveDeleterGreetingText
+	text_end
+
+MoveDeleterSaidYesText:
+	text_far _MoveDeleterSaidYesText
+	text_end
+
+MoveDeleterWhichMoveText:
+	text_far _MoveDeleterWhichMoveText
+	text_end
+
+MoveDeleterConfirmText:
+	text_far _MoveDeleterConfirmText
+	text_end
+
+MoveDeleterForgotText:
+	text_far _MoveDeleterForgotText
+	text_end
+
+MoveDeleterByeText:
+	text_far _MoveDeleterByeText
+	text_end
+
+MoveDeleterOneMoveText:
+	text_far _MoveDeleterOneMoveText
+	text_end
 
 MoveRelearnerGreetingText:
 	text_far _MoveRelearnerGreetingText
