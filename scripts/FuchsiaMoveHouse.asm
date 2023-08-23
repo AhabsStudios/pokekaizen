@@ -1,0 +1,3 @@
+FuchsiaMoveHouse_TextPointers:
+	dw MoveDeleterText1, TEXT_FUCHSIAMOVEDELETER
+	dw MoveRelearnerText1, TEXT_FUCHSIAMOVERELEARNER

@@ -193,12 +193,10 @@ INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 INCLUDE "gfx/trade.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
-INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
 
-
 SECTION "Battle Core", ROMX
-
+INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/core.asm"
 INCLUDE "engine/battle/effects.asm"
 

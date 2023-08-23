@@ -124,19 +124,20 @@ _PewterGymGuideBeginAdviceText::
 _PewterGymGuideAdviceText::
 	text "BROCK is a super"
 	line "tough TRAINER!"
-	cont "You'll need to"
-	cont "whittle him down"
-	cont "bit by bit if"
-	cont "you want to"
-	cont "stand a chance"
-	cont "against his rock"
-	cont "-solid defenses!"
+	
+	para "You'll need to"
+	line "soften him up"
+	cont "first!"
+	
+	para "Try inflicting"
+	line "poison on his"
+	cont "#MON to chip"
+	cont "away at them."
+	
+	para "You could also"
+	line "put them to"
+	cont "sleep!
 
-	para "Try using moves"
-	line "that will lower"
-	cont "his rock-solid"
-	cont "defense, or his"
-	cont "attack power."
 	done
 
 _PewterGymGuideFreeServiceText::
