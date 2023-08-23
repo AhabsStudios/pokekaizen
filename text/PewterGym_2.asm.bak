@@ -122,15 +122,21 @@ _PewterGymGuideBeginAdviceText::
 	prompt
 
 _PewterGymGuideAdviceText::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+	text "BROCK is a super"
+	line "tough TRAINER!"
+	cont "You'll need to"
+	cont "whittle him down"
+	cont "bit by bit if"
+	cont "you want to"
+	cont "stand a chance"
+	cont "against his rock"
+	cont "-solid defenses!"
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	para "Try using moves"
+	line "that will lower"
+	cont "his rock-solid"
+	cont "defense, or his"
+	cont "attack power."
 	done
 
 _PewterGymGuideFreeServiceText::
