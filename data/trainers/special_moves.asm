@@ -141,10 +141,10 @@ SpecialTrainerMoves:
 	db 4, 2, REFLECT
 	db 4, 3, SURF 
 	db 4, 4, DOUBLE_EDGE
-	db 5, 1, AGILITY
+	db 5, 1, DOUBLE_TEAM
 	db 5, 2, SLASH
 	db 5, 3, HYPER_BEAM
-	db 5, 4, SWORDS_DANCE
+	db 5, 4, SKULL_BASH
 	db 6, 1, EARTHQUAKE
 	db 6, 2, BODY_SLAM
 	db 6, 3, SKULL_BASH
