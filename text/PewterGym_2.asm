@@ -136,7 +136,7 @@ _PewterGymGuideAdviceText::
 	
 	para "You could also"
 	line "put them to"
-	cont "sleep!
+	cont "sleep!"
 
 	done
 
