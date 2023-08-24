@@ -1,0 +1,4 @@
+FuchsiaMoveHouse_TextPointers:
+	dw BlahBlah1
+	dw MoveDeleterText1, TEXT_FUCHSIAMOVEDELETER
+	dw MoveRelearnerText1, TEXT_FUCHSIAMOVERELEARNER

@@ -1221,7 +1221,8 @@ INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
 
 ; Mateo's move relearner/deleter files
-INCLUDE "scripts/FuchsiaMoveHouse.asm"
+INCLUDE "scripts/move_deleter.asm"
+INCLUDE "scripts/move_relearner.asm"
 INCLUDE "data/maps/objects/FuchsiaMoveHouse.asm"
 INCLUDE "data/maps/headers/FuchsiaMoveHouse.asm"
 FuchsiaMoveHouse_Blocks: INCBIN "maps/FuchsiaMoveHouse.blk"
