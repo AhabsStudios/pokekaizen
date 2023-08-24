@@ -389,10 +389,7 @@ KogaAI:
 	jp AIUseXAttack
 
 BlaineAI:
-	cp 13 percent - 1
-	ret nc
-	ld a, 5
-	call AICheckIfHPBelowFraction
+	cp 25 percent + 1
 	ret nc
 	jp AIUseHyperPotion
 
