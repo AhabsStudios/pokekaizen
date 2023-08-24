@@ -363,7 +363,7 @@ BrockAI:
 ; if his active monster has a status condition, use a full heal
 	cp 25 percent + 1
 	ret nc
-	jp AIUseXDefend
+	jp AIUseXSpecial
 
 MistyAI:
 	cp 25 percent + 1
@@ -389,7 +389,10 @@ KogaAI:
 	jp AIUseXAttack
 
 BlaineAI:
-	cp 25 percent + 1
+	cp 13 percent - 1
+	ret nc
+	ld a, 5
+	call AICheckIfHPBelowFraction
 	ret nc
 	jp AIUseHyperPotion
 

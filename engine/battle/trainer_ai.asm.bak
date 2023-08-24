@@ -373,7 +373,7 @@ MistyAI:
 LtSurgeAI:
 	cp 25 percent + 1
 	ret nc
-	jp AIUseXSpeed
+	jp AISwitchIfEnoughMons
 
 ErikaAI:
 	cp 50 percent + 1
