@@ -174,6 +174,7 @@ INCLUDE "engine/battle/move_effects/one_hit_ko.asm"
 
 SECTION "Slot Machines", ROMX
 
+INCLUDE "engine/movie/title2.asm"
 INCLUDE "engine/battle/link_battle_versus_text.asm"
 INCLUDE "engine/slots/slot_machine.asm"
 INCLUDE "engine/events/pewter_guys.asm"
@@ -193,10 +194,9 @@ INCLUDE "engine/battle/draw_hud_pokeball_gfx.asm"
 INCLUDE "gfx/trade.asm"
 INCLUDE "engine/pokemon/evos_moves.asm"
 INCLUDE "engine/battle/move_effects/heal.asm"
+INCLUDE "engine/battle/move_effects/transform.asm"
 INCLUDE "engine/battle/move_effects/reflect_light_screen.asm"
 
-SECTION "Battle Engine 8", ROMX
-INCLUDE "engine/battle/move_effects/transform.asm"
 
 SECTION "Battle Core", ROMX
 
@@ -301,7 +301,6 @@ INCLUDE "engine/events/hidden_objects/gym_statues.asm"
 INCLUDE "engine/events/hidden_objects/bench_guys.asm"
 INCLUDE "engine/events/hidden_objects/blues_room.asm"
 INCLUDE "engine/events/hidden_objects/pokecenter_pc.asm"
-INCLUDE "engine/events/hidden_objects/ss_anne_1f_rooms_bed_heal.asm"
 
 
 SECTION "Battle Engine 11", ROMX

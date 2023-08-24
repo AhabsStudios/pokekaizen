@@ -123,7 +123,7 @@ _PewterGymGuideBeginAdviceText::
 
 _PewterGymGuideAdviceText::
 	text "BROCK is a super"
-	line "-tough TRAINER!"
+	line "tough TRAINER!"
 	
 	para "You'll need to"
 	line "soften him up"
@@ -136,7 +136,7 @@ _PewterGymGuideAdviceText::
 	
 	para "You could also"
 	line "put them to"
-	cont "sleep!"
+	cont "sleep!
 
 	done
 
